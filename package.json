@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bignumber.js": "^9.0.1",
+    "react-router": "^5.2.1",
+    "solc": "^0.8.9",
+    "truffle-hdwallet-provider": "^1.0.6",
+    "web3": "^1.6.0"
+  }
+}
