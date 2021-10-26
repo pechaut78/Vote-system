@@ -1,7 +1,8 @@
 const path = require("path");
+require('dotenv').config();
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var Web3 = require('web3'); // Set variable to the web3 module
-var web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
+
+const { API_URL, MNEMONIC } = process.env;
 
     module.exports = {
         // See <http://truffleframework.com/docs/advanced/configuration>
@@ -15,10 +16,9 @@ var web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
                 gasLimit: 26000000000
             },
             ropsten: {
+                provider:new HDWalletProvider(MNEMONIC,API_URL),
                 network_id: 3,
-                host: "localhost",
-                port:  8545,
-                gas:   2900000
+                gas:   67000000 
             },
             mainnet: {
                 //provider: new HDWalletProvider(secrets.mnemonic, "https://mainnet.infura.io/"),
@@ -29,7 +29,7 @@ var web3 = new Web3(Web3.givenProvider || "ws://localhost:8545");
         },
         compilers: {
             solc: {
-                version: "0.6.0"
+                version: "0.8.0"
             }
         }
     };
