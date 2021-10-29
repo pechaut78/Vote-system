@@ -12,13 +12,13 @@ const { API_URL, MNEMONIC } = process.env;
                 host: "127.0.0.1",
                 port: 8545,
                 network_id: "*", // Match any network id
-                gas: 10000000,
+                gas: 6721974,
                 gasLimit: 26000000000
             },
             ropsten: {
                 provider:new HDWalletProvider(MNEMONIC,API_URL),
                 network_id: 3,
-                gas:   67000000 
+                gas:   8000000 
             },
             mainnet: {
                 //provider: new HDWalletProvider(secrets.mnemonic, "https://mainnet.infura.io/"),

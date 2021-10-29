@@ -29,11 +29,12 @@ class AdminInterface extends Component
         // Listen to status change
        this._contract.events.WorkflowStatusChange().on("data", (event) => { 
            this.setState({_ContractStatus:event.returnValues.newStatus})
+           this.getVothingResult()
         });
         
         //Listen to the end of the voting session
         this._contract.events.VotesTallied().on("data", (event) => { 
-           getWinningProposition(this.contract).then((val)=>{
+           getWinningProposition(this._contract,this.errorDisplay).then((val)=>{
                this.setState({_voteResult: val })
            })         
         });
@@ -49,7 +50,7 @@ class AdminInterface extends Component
 
         if(!this.props.isConnected()||!this.props.isAdmin()) return
         var _getWeb3 = this.props.getWeb3Cnx
-        var err, result,loop=true
+        var result,loop=true
 
         // Inifinite loop so we do not interact with the page if we are not fully connected
         // Get Web3
@@ -79,15 +80,19 @@ class AdminInterface extends Component
         this.setState({_ContractStatus: await getStatus(this._contract,this.errorDisplay)})    
         this._accounts = await this.props.initAccounts()
         this.registerEventStatus()
+        this.getVothingResult()
         closeModal(initModal)
     }
 
 
     // Mapping for contract functions    
-    getVothingResult = async () =>{
-        if(this._ContractStatus!=5) return (<p>Vote en cours...</p>)
-        const m = await getWinningProposition()
-        return (<p>{m}</p>) 
+    getVothingResult = async () =>{        
+        if(this.state._ContractStatus===5)
+        {
+            getWinningProposition(this._contract,this.errorDisplay).then((val)=> {
+                this.setState({_voteResult:val})
+            })
+        }        
     }
     RegisterVoter = async ()=> {                       
         openModal(this._operationModal) 

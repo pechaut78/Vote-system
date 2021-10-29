@@ -46,6 +46,7 @@ contract Voting is Admin {
     
     //------------------ Events 
     event VoterRegistered(address voterAddress);
+    event VoterRegistrationStarting();
     event ProposalsRegistrationStarted();
     event ProposalsRegistrationEnded();
     event ProposalRegistered(uint proposalId);
@@ -56,13 +57,14 @@ contract Voting is Admin {
     event WorkflowStatusChange(WorkflowStatus previousStatus, WorkflowStatus
     newStatus);
     
-    
+     
     
     
     constructor() Admin()
     {
         // We start the state machine
         _Status=WorkflowStatus.RegisteringVoters;
+        emit VoterRegistrationStarting();
     }    
     
     

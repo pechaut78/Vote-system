@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import { Redirect } from "react-router-dom";
 import { withRouter } from 'react-router-dom'
 import {openModal,closeModal} from "../helpers/modals.js"
 import {getStatus, voteFor,
@@ -35,7 +34,7 @@ class VoterInterface extends Component
        // Listen to the contract changig its status 
        this._contract.events.WorkflowStatusChange().on("data", (event) => { 
            this.setState({_ContractStatus:event.returnValues.newStatus})
-
+            this.GetWinner()
         });
         
         // For this event we do something special: we force the update of the list displayed on screen

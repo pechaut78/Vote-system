@@ -1,5 +1,4 @@
 const registerVoter = async(contract,account, address, successFunc, errorFunc) => {
-    let res=null
     try
     {
         contract.methods.registerVoter(address).send({from:account}).then(
@@ -11,7 +10,7 @@ const registerVoter = async(contract,account, address, successFunc, errorFunc) =
 }
 
 const getStatus =  async(contract, errorFunc) => {
-    let res = null
+    let res=null
     try
     {
         res = await contract.methods.getStatus().call()
@@ -22,7 +21,6 @@ const getStatus =  async(contract, errorFunc) => {
 }
 
 const endProposalRegistration =  async(contract,account, successFunc, errorFunc) => {
-  let res=null
     try
     {
         contract.methods.endProposalRegistration().send({from:account}).then(
@@ -35,7 +33,6 @@ const endProposalRegistration =  async(contract,account, successFunc, errorFunc)
 }
 
 const startProposalRegistration=  async(contract,account, successFunc, errorFunc) => {
-    let res=null
     try
     {
         contract.methods.startProposalRegistration().send({from:account}).then(
@@ -46,7 +43,6 @@ const startProposalRegistration=  async(contract,account, successFunc, errorFunc
 }
 
 const startVotingSession=  async(contract,account, successFunc, errorFunc) => {
-    let res = null
     try
     {
         contract.methods.startVotingSession().send({from:account}).then(
@@ -56,7 +52,6 @@ const startVotingSession=  async(contract,account, successFunc, errorFunc) => {
     } catch(err)  {errorFunc(err)}
 }
 const endVotingSession=  async(contract,account, successFunc, errorFunc) => {
-    let res = null
     try
     {
          contract.methods.endVotingSession().send({from:account}).then(
@@ -67,7 +62,6 @@ const endVotingSession=  async(contract,account, successFunc, errorFunc) => {
 }
 
 const endVotingCount=  async(contract,account, successFunc, errorFunc) => {
-    let res = null
     try
     {
          contract.methods.endVotingCount().send({from:account}).then(
@@ -78,7 +72,6 @@ const endVotingCount=  async(contract,account, successFunc, errorFunc) => {
 }
 
 const submitProposal=  async(contract,txt,account, successFunc, errorFunc) => {
-    let res = null
     try
     {
          contract.methods.submitProposal(txt).send({from:account}).then(
