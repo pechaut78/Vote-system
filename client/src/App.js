@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import VotingContract from "./contracts/Voting.json";
+import VotingContract from "./contracts/Voting";
 import getWeb3 from "./helpers/getWeb3";
 import {BrowserRouter, Route, Switch } from 'react-router-dom'
 
