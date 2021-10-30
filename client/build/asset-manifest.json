@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Vote-system/static/css/main.bb1cbc47.chunk.css",
-    "main.js": "/Vote-system/static/js/main.0af0913d.chunk.js",
-    "main.js.map": "/Vote-system/static/js/main.0af0913d.chunk.js.map",
+    "main.js": "/Vote-system/static/js/main.0eff7295.chunk.js",
+    "main.js.map": "/Vote-system/static/js/main.0eff7295.chunk.js.map",
     "runtime-main.js": "/Vote-system/static/js/runtime-main.1d46735e.js",
     "runtime-main.js.map": "/Vote-system/static/js/runtime-main.1d46735e.js.map",
     "static/css/2.171a7357.chunk.css": "/Vote-system/static/css/2.171a7357.chunk.css",
     "static/js/2.8a7070eb.chunk.js": "/Vote-system/static/js/2.8a7070eb.chunk.js",
     "static/js/2.8a7070eb.chunk.js.map": "/Vote-system/static/js/2.8a7070eb.chunk.js.map",
     "index.html": "/Vote-system/index.html",
-    "precache-manifest.94214d038b816df3006c527cfff75f65.js": "/Vote-system/precache-manifest.94214d038b816df3006c527cfff75f65.js",
+    "precache-manifest.964ea24f9a42ba58fffdddf84aed14b6.js": "/Vote-system/precache-manifest.964ea24f9a42ba58fffdddf84aed14b6.js",
     "service-worker.js": "/Vote-system/service-worker.js",
     "static/css/2.171a7357.chunk.css.map": "/Vote-system/static/css/2.171a7357.chunk.css.map",
     "static/css/main.bb1cbc47.chunk.css.map": "/Vote-system/static/css/main.bb1cbc47.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.171a7357.chunk.css",
     "static/js/2.8a7070eb.chunk.js",
     "static/css/main.bb1cbc47.chunk.css",
-    "static/js/main.0af0913d.chunk.js"
+    "static/js/main.0eff7295.chunk.js"
   ]
 }
