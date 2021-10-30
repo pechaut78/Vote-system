@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pechaut78.github.io/vote-system/",
+  "homepage": "https://pechaut78.github.io/vote-system",
   "engines": {
     "node": "16.11.0",
     "npm": "8.0.0"
