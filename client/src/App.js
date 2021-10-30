@@ -8,6 +8,7 @@ import Connexion from './Components/Connexion'
 import NotFound  from "./Components/NotFound"
 import VoterInterface  from "./Components/VoterInterface"
 import AdminInterface  from "./Components/AdminInterface"
+let pkg = require("../package.json");
 
 class App extends Component {
  
@@ -127,11 +128,11 @@ class App extends Component {
   };
 
 
-
   render() {
     
+console.log(pkg.rootPath);
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={pkg.rootPath}>
           <Switch>
               <Route exact path='/'> 
                 <Connexion  setIsAdmin={this.setIsAdmin} setIsConnected={this.setIsConnected}/> 
@@ -140,7 +141,7 @@ class App extends Component {
                   <VoterInterface  isConnected={this.isConnected} isAdmin={this.isAdmin}
                     getWeb3Cnx={this.getWeb3Cnx} initContract={this.initContract} initAccounts={this.initAccounts} getAccounts={this.getAccounts}/>
               </Route>
-              <Route path='/admin'>
+              <Route path='admin'>
                
                 <AdminInterface isConnected={this.isConnected} isAdmin={this.isAdmin} 
                     getWeb3Cnx={this.getWeb3Cnx} initContract={this.initContract} initAccounts={this.initAccounts} getAccounts={this.getAccounts}/>

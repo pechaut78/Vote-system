@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://pechaut78.github.io/Vote-system",
+  "rootPath": "Vote-system",
   "engines": {
     "node": "16.11.0",
     "npm": "8.0.0"
