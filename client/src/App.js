@@ -141,7 +141,7 @@ console.log(pkg.rootPath);
                   <VoterInterface  isConnected={this.isConnected} isAdmin={this.isAdmin}
                     getWeb3Cnx={this.getWeb3Cnx} initContract={this.initContract} initAccounts={this.initAccounts} getAccounts={this.getAccounts}/>
               </Route>
-              <Route path='/admin'>
+              <Route path='/admin/'>
                
                 <AdminInterface isConnected={this.isConnected} isAdmin={this.isAdmin} 
                     getWeb3Cnx={this.getWeb3Cnx} initContract={this.initContract} initAccounts={this.initAccounts} getAccounts={this.getAccounts}/>
