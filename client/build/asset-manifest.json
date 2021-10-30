@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/vote-system/static/css/main.bb1cbc47.chunk.css",
-    "main.js": "/vote-system/static/js/main.83a66089.chunk.js",
-    "main.js.map": "/vote-system/static/js/main.83a66089.chunk.js.map",
-    "runtime-main.js": "/vote-system/static/js/runtime-main.eb1e92d7.js",
-    "runtime-main.js.map": "/vote-system/static/js/runtime-main.eb1e92d7.js.map",
-    "static/css/2.171a7357.chunk.css": "/vote-system/static/css/2.171a7357.chunk.css",
-    "static/js/2.fa9813f3.chunk.js": "/vote-system/static/js/2.fa9813f3.chunk.js",
-    "static/js/2.fa9813f3.chunk.js.map": "/vote-system/static/js/2.fa9813f3.chunk.js.map",
-    "index.html": "/vote-system/index.html",
-    "precache-manifest.e53063e2805461c0aa8fe8cd2739510b.js": "/vote-system/precache-manifest.e53063e2805461c0aa8fe8cd2739510b.js",
-    "service-worker.js": "/vote-system/service-worker.js",
-    "static/css/2.171a7357.chunk.css.map": "/vote-system/static/css/2.171a7357.chunk.css.map",
-    "static/css/main.bb1cbc47.chunk.css.map": "/vote-system/static/css/main.bb1cbc47.chunk.css.map",
-    "static/js/2.fa9813f3.chunk.js.LICENSE.txt": "/vote-system/static/js/2.fa9813f3.chunk.js.LICENSE.txt"
+    "main.css": "/Vote-system/static/css/main.bb1cbc47.chunk.css",
+    "main.js": "/Vote-system/static/js/main.4367c682.chunk.js",
+    "main.js.map": "/Vote-system/static/js/main.4367c682.chunk.js.map",
+    "runtime-main.js": "/Vote-system/static/js/runtime-main.1d46735e.js",
+    "runtime-main.js.map": "/Vote-system/static/js/runtime-main.1d46735e.js.map",
+    "static/css/2.171a7357.chunk.css": "/Vote-system/static/css/2.171a7357.chunk.css",
+    "static/js/2.fe0fe996.chunk.js": "/Vote-system/static/js/2.fe0fe996.chunk.js",
+    "static/js/2.fe0fe996.chunk.js.map": "/Vote-system/static/js/2.fe0fe996.chunk.js.map",
+    "index.html": "/Vote-system/index.html",
+    "precache-manifest.5e9ee598cb1de2839209256b58b71e4f.js": "/Vote-system/precache-manifest.5e9ee598cb1de2839209256b58b71e4f.js",
+    "service-worker.js": "/Vote-system/service-worker.js",
+    "static/css/2.171a7357.chunk.css.map": "/Vote-system/static/css/2.171a7357.chunk.css.map",
+    "static/css/main.bb1cbc47.chunk.css.map": "/Vote-system/static/css/main.bb1cbc47.chunk.css.map",
+    "static/js/2.fe0fe996.chunk.js.LICENSE.txt": "/Vote-system/static/js/2.fe0fe996.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.eb1e92d7.js",
+    "static/js/runtime-main.1d46735e.js",
     "static/css/2.171a7357.chunk.css",
-    "static/js/2.fa9813f3.chunk.js",
+    "static/js/2.fe0fe996.chunk.js",
     "static/css/main.bb1cbc47.chunk.css",
-    "static/js/main.83a66089.chunk.js"
+    "static/js/main.4367c682.chunk.js"
   ]
 }
